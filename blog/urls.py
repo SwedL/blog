@@ -22,4 +22,5 @@ urlpatterns = [
     path('', views.info_blog),
     path('admin/', admin.site.urls),
     path('posts/', include('posts.urls')),
+    path('beautiful_table', views.b_table),
 ]

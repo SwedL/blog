@@ -1,0 +1,46 @@
+{% extends 'blog/base.html' %}
+
+{% load static %}
+
+{% block css-additional %}
+    <link rel="stylesheet" href="{% static 'blog/css/table.css' %}">
+{% endblock %}
+
+{% block title %}
+    Table
+{% endblock %}
+
+{% block content %}
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Points</th>
+                <th>Active</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dom</td>
+                <td>6000</td>
+                <td>False</td>
+            </tr>
+            <tr class="active-row">
+                <td>Melissa</td>
+                <td>5150</td>
+                <td>True</td>
+            </tr>
+             <tr class="active-row">
+                <td>David</td>
+                <td>4500</td>
+                <td>True</td>
+            </tr>
+            <tr>
+                <td>Gerard</td>
+                <td>3000</td>
+                <td>False</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock%}
+
